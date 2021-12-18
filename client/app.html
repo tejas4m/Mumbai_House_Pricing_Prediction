@@ -1,0 +1,30 @@
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="app.js"></script>
+  <link rel="stylesheet" href="app.css">
+  <title>Mumbai House Prediction</title>
+</head>
+<body>
+  <div class="contact-us">
+  <form>
+    <input id="sqft" name="sqft" placeholder="Area (square feet)" required="" type="number" />
+    <input name="Bedrooms" id="Bedrooms" placeholder="Bedrooms" type="number" min="1" max="5" />
+    <input name="Bathrooms" id="Bathrooms" placeholder="Bathrooms" type="number" min="1" max="4" />
+
+     <select class="location" name="Location" id="uiLocations">
+    <option value="" disabled="disabled"  placeholder="Choose a Location" selected="selected">Choose a Location</option>
+		
+  </select>
+    <button type="button" onclick="onClickedEstimatePrice()" class="submit">PREDICT</button>
+  <output id="uiEstimatedPrice" class="result">	</output>
+
+  </form>
+</div>
+
+</body>
+</html>
